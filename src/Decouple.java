@@ -5,7 +5,7 @@ import javax.script.ScriptException;
 /**
  * Created by A261711 on 2017-07-14.
  */
-class Decouple implements Results{
+class Decouple implements Results {
 
     private Object decouple(String line) {
         ScriptEngineManager factory = new ScriptEngineManager();
@@ -19,7 +19,7 @@ class Decouple implements Results{
         return obj;
     }
 
-    @Override
+    @Override// від інтерфейсу
     public String getResult(String line) {
         return String.valueOf(decouple(line));
     }
